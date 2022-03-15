@@ -1,0 +1,105 @@
+[versions]
+tagit-Core-version = '7.4.0-SNAPSHOT'
+
+spring-boot-version = "2.6.3"
+servlet-version = "4.0.1"
+kafka-version = "2.8.2"
+micrometer-version = "1.8.2"
+oracle-version = "21.3.0.0"
+java-mail-version = "1.4.7"
+
+commons-text-version = "1.9"
+commons-lang3-version = "3.12.0"
+commons-collections-version="4.4"
+commons-codec-version = "1.15"
+http-client-version = "4.5.13"
+
+google-gson-version = "2.8.9"
+jackson-dataformat-version = "2.11.3"
+flyway-core-version = "8.0.5"
+orika-core-version = "1.5.2"
+encryption-version = "1.0.0"
+jasypt-version = "1.9.3"
+disruptor-version="3.4.2"
+mxlogger-version="1.2.0.1"
+spring-cloud-Version="2021.0.1"
+spring-security-oauth2-version = "2.5.1.RELEASE"
+mxtenancy-version = "1.0.0.0"
+lombok-annotation-version = "1.18.22"
+log4j-api-version = "2.17.1"
+spring-cloud-starter-version = "3.1.1"
+spring-clouds-starter-oauth2 = "2.2.5.RELEASE"
+
+[libraries]
+servlet= {module = "javax.servlet:javax.servlet-api" ,version.ref = "servlet-version"}
+javaxmail = {module = "javax.mail:mail" ,version.ref = "java-mail-version"}
+
+tagitcore= {module = "com.tagit.commons:tagit-core" ,version.ref = "tagit-Core-version"}
+tagitcoreext = {module = "com.tagit.commons:tagit-core-ext" ,version.ref = "tagit-Core-version"}
+tagitcorerest= {module = "com.tagit.commons:tagit-core-rest" ,version.ref = "tagit-Core-version"}
+
+mxlogger= {module = "com.mobeix:mxlogger" ,version.ref = "mxlogger-version"}
+mxtenancy= {module = "com.mobeix:mxtenancy" ,version.ref = "mxtenancy-version"}
+
+springbootbom = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "spring-boot-version" }
+springcloudbom = { module = "org.springframework.cloud:spring-cloud-dependencies", version.ref = "spring-cloud-Version" }
+
+springcloudstarterbootstrap = {module = "org.springframework.cloud:spring-cloud-starter-bootstrap" }
+springbootweb = {module = "org.springframework.boot:spring-boot-starter-web"}
+springbootdatajpa = {module = "org.springframework.boot:spring-boot-starter-data-jpa"}
+springbootdatajdbc = {module = "org.springframework.boot:spring-boot-starter-jdbc"}
+springbootstarterlog4j2 = {module = "org.springframework.boot:spring-boot-starter-log4j2"}
+springbootstarterconfig = {module = "org.springframework.cloud:spring-cloud-starter-config"}
+springcloudconfigserver = {module = "org.springframework.cloud:spring-cloud-config-server"}
+springbootstarteractuator = {module = "org.springframework.boot:spring-boot-starter-actuator"}
+springbootstartervalidation = {module = "org.springframework.boot:spring-boot-starter-validation"}
+springbootstarterspringfox = {module = "io.springfox:springfox-boot-starter"}
+springbootstartertest = {module = "org.springframework.boot:spring-boot-starter-test"}
+
+springbootstartersleuth = {module = "org.springframework.cloud:spring-cloud-starter-sleuth"}
+springbootcloudzipkin = {module = "org.springframework.cloud:spring-cloud-sleuth-zipkin"}
+micrometer = {module = "io.micrometer:micrometer-registry-prometheus",version.ref = "micrometer-version"}
+
+springbootconfigurationprocessor = {module = "org.springframework.boot:spring-boot-configuration-processor"}
+springbootstarterdataredis = {module = "org.springframework.boot:spring-boot-starter-data-redis"}	
+springbootstarterthymeleaf = {module = "org.springframework.boot:spring-boot-starter-thymeleaf"}
+thymeleafextraspringsecurity5 = {module = "org.thymeleaf.extras:thymeleaf-extras-springsecurity5"}
+springcloudstarteroauth2 = {module = "org.springframework.cloud:spring-cloud-starter-oauth2", version.ref = "spring-clouds-starter-oauth2"}
+springsecurityoauth2 = {module = "org.springframework.security.oauth:spring-security-oauth2", version.ref = "spring-security-oauth2-version"}
+
+springkafka = {module = "org.springframework.kafka:spring-kafka"}
+kafkaclients = {module = "org.apache.kafka:kafka-clients" ,version.ref = "kafka-version"}
+kafkatest = {module = "org.springframework.kafka:spring-kafka-test"}
+
+mssqljdbc = {module = "com.microsoft.sqlserver:mssql-jdbc"}
+oraclejdbc = {module = "com.oracle.database.jdbc:ojdbc11",version.ref = "oracle-version"}
+mysqljdbc = {module = "mysql:mysql-connector-java"}
+
+apachecommonstext = {module = "org.apache.commons:commons-text", version.ref = "commons-text-version"}
+apachecommonslang3 = {module = "org.apache.commons:commons-lang3", version.ref = "commons-lang3-version"}
+apachecommonscollections4 = {module = "org.apache.commons:commons-collections4", version.ref = "commons-collections-version"}
+apachecommonscodec = {module = "commons-codec:commons-codec", version.ref = "commons-codec-version"}
+apachehttpclient = {module = "org.apache.httpcomponents:httpclient", version.ref = "http-client-version"}
+appachecommonlogging =  {module = "commons-logging:commons-logging"}
+
+googlegson = {module = "com.google.code.gson:gson", version.ref = "google-gson-version"}
+jacksondataformat = {module = "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml", version.ref = "jackson-dataformat-version"}
+flywaycore = {module = "org.flywaydb:flyway-core", version.ref = "flyway-core-version"}
+orikacore = {module = "ma.glasnost.orika:orika-core", version.ref = "orika-core-version"}
+encryption = {module = "com.idealista:format-preserving-encryption", version.ref = "encryption-version"}
+jasypt = {module = "org.jasypt:jasypt", version.ref = "jasypt-version"}
+lombok = {module = "org.projectlombok:lombok"}
+lombokannotation = {module = "org.projectlombok:lombok", version.ref = "lombok-annotation-version"}
+disruptor = {module = "com.lmax:disruptor", version.ref = "disruptor-version"}
+log4japi = {module = "org.apache.logging.log4j:log4j-api", version.ref = "log4j-api-version"}
+log4jcore = {module = "org.apache.logging.log4j:log4j-core", version.ref = "log4j-api-version"}
+
+
+[bundles]
+
+[plugins]
+springboot = { id = "org.springframework.boot", version.ref = "spring-boot-version" }
+
+
+
+
